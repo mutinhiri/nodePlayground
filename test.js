@@ -15,5 +15,13 @@ function stringLength(string){
 //Task 2  Reverse String
 
 function reverseString(string){
-
+    return string.split('').reverse().join()
 }
+
+//task 2 test
+test(reverseString('hello'),()=>{
+  expect(reverseString('hello').toBe('olleh'))
+})
+
+//task 3 
+
