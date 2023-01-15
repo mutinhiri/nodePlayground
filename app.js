@@ -7,6 +7,7 @@ const app = express();
 // listen for requests
 app.listen(3000);
 
+app.use(express.static())
 app.use(morgan("combined"))
 
 // register view engine
