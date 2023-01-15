@@ -1,6 +1,8 @@
 const express = require('express');
 const morgan = require('morgan')
 
+const dbURI = 'mongodb+srv://bunbee:<password>@nodeproj.jmnrd3b.mongodb.net/?retryWrites=true&w=majority'
+
 // express app
 const app = express();
 
