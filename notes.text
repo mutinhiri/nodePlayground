@@ -3,4 +3,4 @@ MiddleWare
 
 MiddleWare Examples 
 - Logger middleware to log details of every request
-- 
+- Authentication check middleware for protected routes 
