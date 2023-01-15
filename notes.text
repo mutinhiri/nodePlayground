@@ -12,3 +12,6 @@ MiddleWare Examples
 
 Collection
 - Stores data 
+
+Mongoose
+- ODM library - Object Document Mapping library
