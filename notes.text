@@ -1,2 +1,6 @@
 MiddleWare
 - Any function that runs between client and server
+
+MiddleWare Examples 
+- Logger middleware to log details of every request
+- 
