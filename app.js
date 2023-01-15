@@ -1,10 +1,13 @@
 const express = require('express');
 const morgan = require('morgan')
 
-const dbURI = 'mongodb+srv://bunbee:<password>@nodeproj.jmnrd3b.mongodb.net/?retryWrites=true&w=majority'
+
 
 // express app
 const app = express();
+
+// database connection
+const dbURI = 'mongodb+srv://bunbee:bunbee@nodeproj.jmnrd3b.mongodb.net/?retryWrites=true&w=majority'
 
 // listen for requests
 app.listen(3000);
