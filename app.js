@@ -7,7 +7,7 @@ const app = express();
 // listen for requests
 app.listen(3000);
 
-app.use(morgan('tiny'))
+app.use(morgan("combined"))
 
 // register view engine
 app.set('view engine', 'ejs');
