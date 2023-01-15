@@ -6,3 +6,9 @@ MiddleWare Examples
 - Authentication check middleware for protected routes 
 - Middleware to parse JSON data from requsts
 - Return 404 pages 
+
+
+## MongoDb
+
+Collection
+- Stores data 
