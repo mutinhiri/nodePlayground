@@ -8,9 +8,10 @@ const app = express();
 
 // database connection
 const dbURI = 'mongodb+srv://bunbee:bunbee@nodeproj.jmnrd3b.mongodb.net/?retryWrites=true&w=majority'
+mongoose.connect(dbURI)
 
 // listen for requests
-app.listen(3000);
+app.listen(4000);
 
 app.use(express.static('public'))
 app.use(morgan("combined"))
