@@ -16,7 +16,7 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
 app.listen(4000);
 
 app.use(express.static('public'))
-app.use(morgan("combined"))
+// app.use(morgan("combined"))
 
 // register view engine
 app.set('view engine', 'ejs');
