@@ -8,6 +8,7 @@ const app = express();
 
 // database connection
 const dbURI = 'mongodb+srv://bunbee:bunbee@nodeproj.jmnrd3b.mongodb.net/?retryWrites=true&w=majority'
+mongoose.set('strictQuery', true)
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => 'connected to db')
   .catch((err) => console.log(err))
@@ -17,6 +18,7 @@ app.listen(4000);
 
 app.use(express.static('public'))
 // app.use(morgan("combined"))
+
 
 // register view engine
 app.set('view engine', 'ejs');
