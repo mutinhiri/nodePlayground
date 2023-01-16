@@ -9,6 +9,7 @@ const app = express();
 // database connection
 const dbURI = 'mongodb+srv://bunbee:bunbee@nodeproj.jmnrd3b.mongodb.net/?retryWrites=true&w=majority'
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then((result) => 'connected to db')
 
 // listen for requests
 app.listen(4000);
