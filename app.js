@@ -28,8 +28,16 @@ app.use(express.static('public'))
 //mongoose and mongo sandbox
 app.get('add-blog', (req, res) => {
   const blog = new Blog({
-
+    title: "Newest blog",
+    snippet: "About the new blog created from the db",
+    body: "More about the blog"
   })
+  blog.save()
+    .then((result) => {
+      res.send(result)
+    }).catch((err) => {
+      console.log(err)
+    })
 })
 
 app.get('/', (req, res) => {
