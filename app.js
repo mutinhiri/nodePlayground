@@ -71,7 +71,15 @@ app.get('/about', (req, res) => {
 });
 
 // blog routes
-app.get('/')
+app.get('/blogs', (req, res) => {
+  Blog.find().sort({ createdAt: -1})
+    .then((result) => {
+      res.render('index', { title: 'All Blogs', blogs: result})
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+})
 
 app.get('/blogs/create', (req, res) => {
   res.render('create', { title: 'Create a new blog' });
