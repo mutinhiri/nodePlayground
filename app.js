@@ -27,7 +27,9 @@ app.use(express.static('public'))
 
 //mongoose and mongo sandbox
 app.get('add-blog', (req, res) => {
+  const blog = new Blog({
 
+  })
 })
 
 app.get('/', (req, res) => {
