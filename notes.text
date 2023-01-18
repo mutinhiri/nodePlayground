@@ -19,3 +19,6 @@ Mongoose
 - Create Schemas and Models 
  Schemas define the structure of a type of data/document _Propereties and property type
  Models allow us to communicate with database collections
+
+ Route Paramas 
+ - The variable parts of the route that may change value 
