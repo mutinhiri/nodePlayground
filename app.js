@@ -18,7 +18,8 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
 app.listen(4000);
 app.set('view engine', 'ejs');
 app.use(express.static('public'))
-// app.use(morgan("combined"))
+app.use(express.urlencoded({ extended: true}))
+app.use(morgan("combined"))
 
 
 // register view engine
@@ -82,7 +83,7 @@ app.get('/blogs', (req, res) => {
 })
 
 app.post('/blogs', (req, res) => {
-  
+    console.log(req.body)
 })
 
 app.get('/blogs/create', (req, res) => {
