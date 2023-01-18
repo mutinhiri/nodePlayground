@@ -7,7 +7,7 @@ const mongoose = require('mongoose')
 const app = express();
 
 // database connection
-const dbURI = 'mongodb+srv://bunbee:bunbee@nodeproj.jmnrd3b.mongodb.net/?retryWrites=true&w=majority'
+const dbURI = 'mongodb+srv://bunbee:bunbee@cluster0.8ljddhj.mongodb.net/?retryWrites=true&w=majority'
 mongoose.set('strictQuery', true)
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => 'connected to db')
