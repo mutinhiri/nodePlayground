@@ -25,6 +25,11 @@ app.use(express.static('public'))
 
 // app.set('views', 'myviews');
 
+//mongoose and mongo sandbox
+app.get('add-blog', (req, res) => {
+
+})
+
 app.get('/', (req, res) => {
   const blogs = [
     {title: 'Yoshi finds eggs', snippet: 'Lorem ipsum dolor sit amet consectetur'},
