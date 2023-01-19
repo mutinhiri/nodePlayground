@@ -109,6 +109,8 @@ app.get('/blogs/:id', (req,res) => {
 
 app.delete('/blogs/:id', (req, res) => {
   const id = req.params.id;
+
+  Blog.findByIdAndDelete(id)
 })
 
 app.get('/blogs/create', (req, res) => {
