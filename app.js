@@ -103,8 +103,12 @@ app.get('/blogs/:id', (req,res) => {
     })
     .catch(err => {
       console.log(err)
-    })
+    });
 
+})
+
+app.delete('/blogs/:id', (req, res) => {
+  const id = req.params.id;
 })
 
 app.get('/blogs/create', (req, res) => {
