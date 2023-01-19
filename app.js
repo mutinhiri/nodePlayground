@@ -112,8 +112,8 @@ app.delete('/blogs/:id', (req, res) => {
 
   Blog.findByIdAndDelete(id)
   .then(result => {
-    
-  })
+
+  }).catch(err  => console.log(err))
 })
 
 app.get('/blogs/create', (req, res) => {
